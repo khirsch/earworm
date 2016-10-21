@@ -10,9 +10,11 @@ import { Album } from './album.model';
         <img class="cover" src="{{ album.image }}">
         <div class="caption">
           <h4 id="name">{{ album.name }}</h4>
+          <p id="details">
           <span>{{ album.artist }}</span><br>
           <span>{{ album.genre }}</span><br>
           <span>{{ "$" + album.price + ".00" }}</span>
+          </p>
           <hr>
           <div class="buttons">
             <button class="btn" (click)="reviewAlbum(album)" data-target="#addReview" data-toggle="modal">Review Album</button>
