@@ -4,7 +4,7 @@ import { Album } from './album.model';
 @Component({
   selector: 'earworm',
   template: `
-  <div class="container">
+  <div class="container-fluid">
     <div id="header">
       <img id="logo" src="./../resources/images/logo.png" alt="Earworm">
       <add-review
@@ -24,13 +24,13 @@ import { Album } from './album.model';
     </div>
     <div id="content">
       <div class="row">
-        <div class="col-sm-3 well">
+        <div class="col-sm-2 well">
           <img class="icon" src="./../resources/images/reviews.png"><hr>
           <review-display
             [reviews] = "reviews"
           ></review-display>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <div class="row">
             <album-list
               [childAlbumList] = "allAlbums"
@@ -43,7 +43,7 @@ import { Album } from './album.model';
             ></album-list>
           </div>
         </div>
-        <div id="cart" class="col-sm-3 well">
+        <div id="cart" class="col-sm-2 well">
           <img class="icon" src="./../resources/images/cart.png"><hr>
           <cart-display
             [total] = "total"

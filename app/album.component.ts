@@ -5,7 +5,7 @@ import { Album } from './album.model';
   selector: 'album-display',
   inputs: ['album'],
   template: `
-    <div class="col-sm-6">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <img class="cover" src="{{ album.image }}">
         <div class="caption">
