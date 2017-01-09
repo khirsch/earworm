@@ -52,12 +52,13 @@ textarea {
   width: 40px;
 }
 
-.btn {
+.btn, .btn:focus {
   background: #FFFFFF;
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 1px 1px;
   font-size: 10px;
+  outline: none !important;
 }
 
 .well {
